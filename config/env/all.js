@@ -56,7 +56,7 @@ module.exports = {
 
 	// The secret should be set to a non-guessable string that
 	// is used to compute a session hash
-	sessionSecret: process.env.SESSION_SECRET || 'CHANGE_ME_PLEASE',
+	sessionSecret: process.env.SESSION_SECRET || '9deff3f0976447ddd3da68fed54b87ab54c6c114568685c4c15cd316555669200dec2fa1c5188560da9441981ffd62ee29c7e27e7caf2b118f57c47e4316a110',
 	// The name of the MongoDB collection to store sessions in
 	sessionCollection: 'sessions',
 	// The session cookie settings
@@ -96,7 +96,7 @@ module.exports = {
 		//Order matters here as some directives in form_modules override those in modules
 		js: [
 			'public/config.js',
-            'public/application.js',
+      'public/application.js',
 			'public/dist/populate_template_cache.js',
 			'public/dist/form_populate_template_cache.js',
 			'public/modules/*/*.js',
