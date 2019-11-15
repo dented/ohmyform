@@ -1,5 +1,5 @@
 FROM  node:10-alpine
-LABEL maintainer="OhMyForm <admin@ohmyform.com>"
+LABEL maintainer="Gram <g@whub.io>"
 
 # Create a group and a user with name "ohmyform".
 RUN addgroup --gid 9999 ohmyform && adduser -D --uid 9999 -G ohmyform ohmyform
@@ -19,7 +19,7 @@ WORKDIR /opt/app
 ## TODO: Find a method that's better than this for passing ENV's if possible.
 # Set default ENV
 ENV NODE_ENV=development \
-    SECRET_KEY=ChangeMeChangeMe \
+    SECRET_KEY=9deff3f0976447ddd3da68fed54b87ab54c6c114568685c4c15cd316555669200dec2fa1c5188560da9441981ffd62ee29c7e27e7caf2b118f57c47e4316a110 \
     PORT=5000 \
     BASE_URL=localhost \
     SOCKET_PORT=20523 \
