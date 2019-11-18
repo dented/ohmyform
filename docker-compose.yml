@@ -27,7 +27,7 @@ services:
       - redis
       - mail
     ports:
-      - "80:5000"
+      - "5000:5000"
     depends_on:
       - mongo
       - redis
